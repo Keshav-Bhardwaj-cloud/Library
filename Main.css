@@ -1,0 +1,152 @@
+.bookImage{
+    width: 150px;
+    height: auto;
+    margin: 20px;
+}.BookImage{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+hr{
+    width: 80%;
+    margin-left: 10%;
+}
+.BooksReadTitle{
+    /* text-align: center; */
+    margin-left: 10%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.BooksContainer{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 20px;
+    padding: 40px;
+    padding-left: 20px;
+}
+.BookItem{
+    border:2px solid black;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+
+
+
+
+
+
+
+/* Body and general background */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #f5f7fa, #c3cfe2);
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+/* Container titles */
+.Title {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #1e1e2f;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+/* Buttons styling */
+button {
+    cursor: pointer;
+    border: none;
+    padding: 0.6rem 1.2rem;
+    font-size: 1rem;
+    border-radius: 6px;
+    transition: all 0.2s ease;
+}
+
+/* Add book button */
+.AddBookButton {
+    background-color: #6c63ff;
+    color: white;
+}
+
+.AddBookButton:hover {
+    background-color: #5848c2;
+}
+
+/* Submit button inside dialog */
+.SubmitButton {
+    background-color: #00b894;
+    color: white;
+}
+
+.SubmitButton:hover {
+    background-color: #008f6e;
+}
+
+/* Close button inside dialog */
+.CloseButton {
+    background-color: #d63031;
+    color: white;
+}
+
+.CloseButton:hover {
+    background-color: #a71d1d;
+}
+
+/* Dialog box styling */
+.BookDetailsDialog {
+    border: none;
+    border-radius: 10px;
+    padding: 2rem;
+    background: white;
+    box-shadow: 0 15px 35px rgba(0,0,0,0.2);
+    max-width: 400px;
+}
+
+/* Inputs inside dialog */
+.BookDetails input {
+    width: 100%;
+    padding: 0.5rem 0.6rem;
+    margin-bottom: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 1rem;
+    transition: border 0.2s ease;
+}
+
+.BookDetails input:focus {
+    border-color: #6c63ff;
+    outline: none;
+}
+
+/* Book cards styling */
+.BookItem {
+    background: white;
+    padding: 1rem;
+    margin: 0.8rem 0;
+    border-radius: 10px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.BookItem:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 12px 25px rgba(0,0,0,0.15);
+}
+
+/* Book title */
+.BookTitle {
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin: 0 0 0.5rem 0;
+}
+
+/* Author name */
+.AuthorName {
+    font-size: 0.95rem;
+    color: #555;
+}

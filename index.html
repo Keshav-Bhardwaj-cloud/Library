@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./CssFiles/styles.css">
+    <link rel="stylesheet" href="./CssFiles/header.css">
+    <link rel="stylesheet" href="./CssFiles/Main.css">
+    <title>Library</title>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1 class="TitleOfThePage">LIBRARY</h1>
+            <button class="AddBookButton">Add Book</button>
+            <dialog class="BookDetailsDialog">
+                <form class="BookDetails">
+                    <label for="BookName">Book Name</label>
+                    <input type="text" id="BookName">
+                    <label for="AuthorName">Author Name</label>
+                    <input type="text" id="AuthorName">
+                    <menu class="DialogButtons">
+                        <button class="SubmitButton">Submit</button>
+                        <button class="CloseButton">Close</button>
+                    </menu>
+                </form>
+            </dialog>
+        </div>
+        <div class="Main">
+            <div class="BookImage">
+                <h2>Welcome to the Library</h2>
+                <img src="./image.webp" alt="Book Image" class="bookImage">
+            </div>
+            <h3 class="BooksReadTitle">Books Read</h3>
+            <hr>
+            <div class="BooksContainer"></div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
